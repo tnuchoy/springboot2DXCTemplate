@@ -1,8 +1,8 @@
-package com.dxc.application.feature.controllers;
+package com.dxc.application.feature.common.controller;
 
-import com.dxc.application.model.Combo;
-import com.dxc.application.model.RestJsonData;
-import com.dxc.application.services.CommonService;
+import com.dxc.application.feature.common.data.database.model.Combo;
+import com.dxc.application.feature.common.dto.RestJsonData;
+import com.dxc.application.feature.common.service.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
