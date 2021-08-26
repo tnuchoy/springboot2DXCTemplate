@@ -8,4 +8,5 @@ public class MessagesConstants {
     public static final String DATABASE_NOT_CONNECT = "MAPP0004AERR";
     public static final String ERROR_UNDEFINED_ERROR = "MAPP0005AERR";
     public static final String ERROR_MESSAGE_DATA_NOT_FOUND = "MAPP0006AERR";
+    public static final String CONCURRENCY_ERROR= "MBX00009AERR";
 }

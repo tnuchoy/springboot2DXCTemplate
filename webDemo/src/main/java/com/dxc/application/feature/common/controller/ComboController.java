@@ -1,8 +1,4 @@
-<<<<<<< HEAD:webDemo/src/main/java/com/dxc/application/feature/controllers/ComboController.java
-package com.dxc.application.feature.controllers;
-=======
 package com.dxc.application.feature.common.controller;
->>>>>>> 332efea3a07efdfe185e24fbac21e8c00a3282b4:webDemo/src/main/java/com/dxc/application/feature/common/controller/ComboController.java
 
 import com.dxc.application.feature.common.data.database.model.Combo;
 import com.dxc.application.feature.common.dto.RestJsonData;

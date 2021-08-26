@@ -1,8 +1,4 @@
-<<<<<<< HEAD:webDemo/src/main/java/com/dxc/application/feature/controllers/HomeController.java
-package com.dxc.application.feature.controllers;
-=======
 package com.dxc.application.feature.home.controller;
->>>>>>> 332efea3a07efdfe185e24fbac21e8c00a3282b4:webDemo/src/main/java/com/dxc/application/feature/home/controller/HomeController.java
 
 import javax.servlet.http.HttpServletRequest;
 

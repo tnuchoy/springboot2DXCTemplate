@@ -1,8 +1,4 @@
-<<<<<<< HEAD:webDemo/src/main/java/com/dxc/application/feature/controllers/GIMMasterController.java
-package com.dxc.application.feature.controllers;
-=======
 package com.dxc.application.feature.gimmaster.controller;
->>>>>>> 332efea3a07efdfe185e24fbac21e8c00a3282b4:webDemo/src/main/java/com/dxc/application/feature/gimmaster/controller/GIMMasterController.java
 
 import com.dxc.application.constants.MessagesConstants;
 import com.dxc.application.exceptions.ApplicationException;

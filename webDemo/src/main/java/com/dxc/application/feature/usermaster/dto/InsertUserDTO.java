@@ -1,12 +1,11 @@
-package com.dxc.application.feature.personsmaster.dto;
+package com.dxc.application.feature.usermaster.dto;
 
 import lombok.Data;
 
-import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
-public class InsertPersonsDTO {
+public class InsertUserDTO {
     private String citizenId;
     private String firstName;
     private String lastName;
