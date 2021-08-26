@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dxc.application.feature.common.data.database.CommonMapper">
+	<select id="getDBDateTime" resultType="java.util.Date">
+		SELECT NOW()
+	</select>
+	<select id="getGimTypeCombo" resultType="com.dxc.application.feature.common.data.database.model.Combo">
+		SELECT GIM_TYPE as value, GIM_TYPE as name 
+		FROM TB_M_GIM_H 
+		ORDER BY GIM_TYPE
+	</select>
+	<select id="getActiveFlagCombo" resultType="com.dxc.application.feature.common.data.database.model.Combo" parameterType="map">
+		SELECT GIM_CD AS VALUE, CONCAT(GIM_CD,':',GIM_VALUE) AS NAME
+		FROM TB_M_GIM_D 
+		WHERE GIM_TYPE='ACTIVE_FLAG' 
+			AND ACTIVE_FLAG = #{activeFlag}
+		ORDER BY CONVERT(FIELD1,UNSIGNED INTEGER)
+	</select>
+	<select id="getAttachedFileById" resultType="com.dxc.application.feature.common.data.database.model.AttachedFile" parameterType="map">
+		SELECT *
+		FROM TB_R_ATTACHED_FILE
+		WHERE ID = #{id}
+	</select>
+	<insert id="insertAttachedFiled" useGeneratedKeys="true" keyProperty="id" parameterType="com.dxc.application.feature.common.data.database.model.AttachedFile">
+		INSERT INTO TB_R_ATTACHED_FILE
+		(FILE_NAME,FILE_CONTENT_TYPE,FILE_DATA,CREATED_BY,CREATED_DT)
+		VALUES (
+			#{fileName},#{fileContentType},#{fileData},#{createdBy},NOW()
+		)
+	</insert>
+</mapper>
